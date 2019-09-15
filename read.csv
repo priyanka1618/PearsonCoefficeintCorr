@@ -1,0 +1,13 @@
+1. A co-efficient close to 1 means that there’s a very strong positive correlation between the two variables
+
+dataframe.corr() explained
+Pandas dataframe.corr() is used to find the pairwise correlation all columns in the dataframe.
+Any na values are automatically excluded.
+Any non-numeric data type column in the dataframe will be ignored.
+dataframe.corr Parametersdataframe.corr(method='',min_periods=1)
+method : {‘pearson’, ‘kendall’, ‘spearman’} or callable
+pearson : standard correlation coefficient — learn more here
+kendall : Kendall Tau correlation coefficient
+spearman : Spearman rank correlation
+min_periods : int, optional
+Minimum number of observations required per pair of columns to have a valid result. This is currently only available for pearson and spearman correlation
